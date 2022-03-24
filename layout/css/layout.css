@@ -1,0 +1,283 @@
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+#header{padding:30px 0;}
+#header #logo{margin-top:3px; font-variant:small-caps;}
+#header #logo h1{margin:0; padding:0; font-size:26px;}
+#header form{display:block; position:relative; width:100%;}
+#header input, #header button{display:block; height:36px; border:none;}
+#header input{width:100%; min-width:250px; padding:5px 40px 5px 15px;}
+#header button{position:absolute; top:1px; right:1px; width:32px; height:34px; font-size:16px; cursor:pointer;}
+#header button em{display:none;}
+
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro{padding:150px 0;}
+#pageintro article{display:block; float:right; max-width:60%; text-align:center;}
+#pageintro article div *{margin:0; line-height:normal;}
+#pageintro article .heading{margin-bottom:30px; font-size:42px; text-transform:uppercase;}
+#pageintro article p{font-size:16px;}
+
+
+/* Transition Fade
+--------------------------------------------------------------------------------------------------------------- */
+*, *::before, *::after{transition:all .3s ease-in-out;}
+#mainav form *{transition:none !important;}
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+
+#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+
+/* Top Navigation */
+#mainav ul{text-transform:uppercase;}
+#mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none; font-weight:400;}
+#mainav ul ul ul{left:180px; top:0;}
+#mainav li{display:inline-block; position:relative; margin:0 15px 0 0; padding:0;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:20px 0;}
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+#mainav .drop{padding-left:15px;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
+#mainav .drop::after{top:25px; left:5px;}
+#mainav li li .drop::after{top:15px; left:5px;}
+#mainav ul ul{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+
+#mainav form{display:none; margin:0; padding:20px 0;}
+#mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
+#mainav form select{width:100%; padding:5px; border:none;}
+#mainav form select option{margin:5px; padding:0; border:none;}
+
+
+
+/* Фотогалерея и фидеогалерея
+--------------------------------------------------------------------------------------------------------------- */
+#gallery{display:block; width:100%; margin-bottom:50px;}
+#gallery .heading {font-size: 21px;}
+img {border: 1px solid #ddd; border-radius: 4px; padding: 6px; margin: 4px; width: 165px; margin-top: 2%;}
+img:hover {box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);}
+.albumtop {padding-top: 5%;}
+
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#EAEAEA; background-color:#3C4348;}
+a{color:#00BCDF;}
+a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
+hr, .borderedbox{border-color:#D7D7D7;}
+label span{color:#FF0000; background-color:inherit;}
+input:focus, textarea:focus, *:required:focus{border-color:#00BCDF;}
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#00BCDF; border-color:#00BCDF;}
+.btn:hover, .btn.inverse{color:inherit; border-color:inherit;}
+
+
+/* Rows */
+.row1{color:#FFFFFF; background-color:#3C4348;}
+.row2{color:#FFFFFF; background-color:#212427;}
+.row6, .row6 a{color:#EAEAEA; background-color:#3C4348;}
+
+/* Header */
+#header #logo *{color:inherit;}
+#header input, #header button{color:#FFFFFF; background-color:#212427;}
+#header button{color:#00BCDF;}
+
+
+/* Page Intro */
+#pageintro .btn.inverse{color:#00BCDF; background-color:#FFFFFF; border-color:#FFFFFF;}
+#pageintro .btn.inverse:hover{color:#FFFFFF; background-color:#00BCDF; border-color:#00BCDF;}
+
+
+/* Navigation */
+#mainav li a{color:inherit; background-color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#00BCDF; background-color:inherit;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#00BCDF;}
+#mainav form select{color:#FFFFFF; background-color:#3C4348;}
+
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:30px 0;}
+#copyright *{margin:0; padding:0;}
+
+/* Максимальная ширина — ноутбуки т. д.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px){
+	.hoc{max-width:978px;}
+}
+
+/* VideoJS */
+
+
+#videoPlayer {
+    width: 450px;
+}
+ 
+#video {
+    width: 100%;
+}
+ 
+.video-track {
+    height: 5px;
+    width: 100%;
+    background-color: #b6b6b6;
+}
+ 
+.timeline {
+    height: 5px;
+    width: 0;
+    background-color: #58b4ff
+}
+ 
+.buttons {
+    padding: 5px 0;
+}
+
+/* Trainer */
+
+.tcard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .ttitle {
+    color: grey;
+    font-size: 15px;
+  }
+  
+   .tcontent {
+      display:flex;
+      justify-content: center;
+      
+  }
+  .otstup {
+      padding: 30px;
+  }
+
+  /* Контакты */
+  .nesolestag-enadenud {
+    width: 615px;
+    margin: 0 auto;
+  }
+  
+  .kesednsoled:after,
+  .kesednsoled:before {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+
+  .ico-contact {
+    line-height: 1.9 !important;
+  }
+  .meanous-andscoev {
+    float: left;
+    margin-bottom: 20px;
+  }
+  .aio-icon-title {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+
+
+
+  .info {
+    display: flex;
+    
+  }
+
+
+  /* Вопрос/ответ */
+
+  * {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* Подвал */
+
+.footer {
+  /* position: fixed; */
+  display: flex;
+  justify-content: space-around;
+  /* left: 0;
+  bottom: 0; */
+  width: 100%;
+  color: white;
+  text-align: center;
+}
