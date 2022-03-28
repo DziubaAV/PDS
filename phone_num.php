@@ -1,9 +1,5 @@
 <?php
-$dblocation="localhost";
-$dbuser="root";
-$dbpasswd="";
-$dbname="pds";
-$dbcnx = mysqli_connect($dblocation,$dbuser,$dbpasswd, $dbname);
+require_once("config/config.php");
 if(!$dbcnx)
   exit("<P>Error connect</P>" );
 $query = "INSERT INTO  num_tel VALUES (NULL,'".$_POST['phone_num']."')";
