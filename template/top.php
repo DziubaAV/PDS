@@ -1,4 +1,4 @@
-<?php include "сonfiguration\сounter.php"?>
+<?php include "Counter\сounter.php"?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
