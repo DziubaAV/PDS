@@ -1,5 +1,5 @@
 <?php
-require_once("config/config.php");
+require_once('BD\BDcnx.php');
 if(!$dbcnx)
   exit("<P>Error connect</P>" );
 $query = "INSERT INTO  qustions VALUES (NULL,'".$_POST['name']."', '".$_POST['email']."', '".$_POST['qustion']."','new')";

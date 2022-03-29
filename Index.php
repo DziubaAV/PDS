@@ -17,7 +17,7 @@
       </div>
 
 <!-- Начало модального окна!!! -->
-<form  method="post" action="/phone_num.php">
+<form  method="post" action="phone_num.php">
 <div id="myModal" class="modal">
   <div class="modal-content">
     <div class="modal-header">

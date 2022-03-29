@@ -1,4 +1,4 @@
-<?php include 'config\config.php';
+<?php include 'BD\BDcnx.php';
 
 // Указываем кодировку, в которой будет получена информация из базы
 @mysqli_query ($dbcnx, 'set character_set_results = "utf8"');
@@ -11,7 +11,10 @@ $date = date("Y-m-d");
 $res = mysqli_query($dbcnx, "SELECT `visit_id` FROM `visits` WHERE `date`='$date'") or die ("Проблема при подключении к БД");
 
 // Если сегодня еще не было посещений
-if (mysqli_num_rows($res) == 0)
+// if (mysqli_num_rows($res) == 0)
+if(!$res || mysqli_num_rows($res)==0) 
+
+
 {
     // Очищаем таблицу ips
     mysqli_query($dbcnx, "DELETE FROM `ips`");
@@ -30,7 +33,8 @@ else
     $current_ip = mysqli_query($dbcnx, "SELECT `ip_id` FROM `ips` WHERE `ip_address`='$visitor_ip'");
 
     // Если такой IP-адрес уже сегодня был (т.е. это не уникальный посетитель)
-    if (mysqli_num_rows($current_ip) == 1)
+    // if (mysqli_num_rows($current_ip) == 1)
+    if(!$current_ip || mysqli_num_rows($res)==0) 
     {
         // Добавляем для текущей даты +1 просмотр (хит)
         mysqli_query($dbcnx, "UPDATE `visits` SET `views`=`views`+1 WHERE `date`='$date'");
@@ -45,4 +49,4 @@ else
         // Добавляем в базу +1 уникального посетителя (хост) и +1 просмотр (хит)
         mysqli_query($dbcnx, "UPDATE `visits` SET `hosts`=`hosts`+1,`views`=`views`+1 WHERE `date`='$date'");
     }
-} ?>
+}

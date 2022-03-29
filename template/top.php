@@ -1,4 +1,4 @@
-<?php include 'counter.php'?>;
+<?php include "сonfiguration\сounter.php"?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +15,7 @@
 
 </head>
 <body id="top">
-    
+
            <div class="wrapper row1">
         <header id="header" class="hoc clear">
 
@@ -40,7 +40,7 @@
       <div class="wrapper row2">
         <nav id="mainav" class="hoc clear"> 
           <ul class="clear">
-            <li class="active"><a href="Index.php">Главная</a></li>
+            <li class="active"><a href="/Index.php">Главная</a></li>
             <li><a class="drop" href="#">Журнал</a>
               <ul>
                 <li><a href="/gallery.php">Фотогалерея</a></li>
@@ -71,10 +71,8 @@
               </ul> -->
             <li><a href="/contact.php">Контакты</a></li>
             <li><a href="/answer.php">Вопрос/ответ</a></li>
-            <!-- <li><a href="#">Текст 3</a></li>
+            <!-- <li><a href="admin\index.php">Статистика</a></li>
             <li><a href="#">Текст 4</a></li> -->
           </ul>
         </nav>
       </div>
-      
-     

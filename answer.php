@@ -7,7 +7,7 @@
         <h2>Задайте нам вопрос и мы обязательно на него ответим!</h2>
 
             <div class="container">
-              <form  method="post" action="/qustion.php">
+              <form  method="post" action="qustion.php">
                 <div class="row">
                   <div class="col-25">
                     <label for="fname">Имя</label>
