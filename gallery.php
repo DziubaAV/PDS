@@ -5,8 +5,24 @@
   <main class="hoc container clear"> 
     <div class="content"> 
       <div id="gallery">
-        <figure>
 
+      <?php
+        include "BD/BDcnx.php";
+        $result = mysqli_query($dbcnx,"SELECT * FROM `catalogs`");
+        
+        while($myrow = mysqli_fetch_assoc($result))
+        {
+          echo $myrow['name'];
+          echo "<br>";
+        }
+        
+        ?>
+
+
+
+
+        <figure>  
+     
           <div class="albumtop">
           <header class="heading">Клуб тайландского бокса Sin Tyao Gym (Альбом 1)</header>
           <a target="_blank" href="/layout/img/1.jpg">
