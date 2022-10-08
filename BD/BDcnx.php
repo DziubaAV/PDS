@@ -1,3 +1,4 @@
+<!-- Подключение к базе данных -->
 <?php
 $dblocation="localhost";
 $dbuser="root";

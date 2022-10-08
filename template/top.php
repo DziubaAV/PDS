@@ -1,4 +1,3 @@
-<?php include "Counter\сounter.php"?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +14,25 @@
 
 </head>
 <body id="top">
+
+<div class="wrapper row0">
+      <div id="topbar" class="hoc clear"> 
+        
+        <div class="fl_left">
+          <ul class="nospace inline pushright">
+            <li><i class="fa fa-phone"></i> +375 (29) 187-55-26</li>
+            <li><i class="fa fa-envelope-o"></i> dz.artsiomi@gmail.com</li>
+          </ul>
+        </div>
+        <div class="fl_right">
+          <ul class="nospace inline pushright">
+            <li><i class="fa fa-sign-in"></i> <a href="#">Aвторизоваться</a></li>
+            <li><i class="fa fa-user"></i> <a href="#">Регистрация</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
 
            <div class="wrapper row1">
         <header id="header" class="hoc clear">

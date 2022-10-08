@@ -1,4 +1,5 @@
 <?php require_once("template/top.php");?>
+
 <!-- Контакты -->
 
 <div class="wrapper row3">
@@ -41,9 +42,7 @@
           </div>
                   <span class="kesednsoled"></span>
             </div>  
-          
-          
-            
+               
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2579.894256225895!2d27.653809470098047!3d53.93612746949942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x55d5639d9ac786aa!2z0KHQuNC90YLRj9C-INCh0L_QvtGA0YLQuNCy0L3QvtC1INCe0J4!5e0!3m2!1sru!2sby!4v1647448773363!5m2!1sru!2sby" 
             width="450" height="480" allowfullscreen="" loading="lazy"></iframe>
           </div>
