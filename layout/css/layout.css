@@ -1,28 +1,6 @@
-/* Rows
---------------------------------------------------------------------------------------------------------------- */
-.row0, .row0 a{}
-.row1, .row1 a{}
-.row2, .row2 a{}
-.row3, .row3 a{}
-.row4, .row4 a{}
-.row5, .row5 a{}
-.row6, .row6 a{}
-
-/* Rows */
-.row0, .row0 a{color:#4A4A4A; background-color:#F2F1EE;}
-.row1{color:#FFFFFF; background-color:#3C4348;}
-.row2{color:#FFFFFF; background-color:#212427;}
-.row3{color:#4A4A4A; background-color:#F2F1EE;}
-.row4{color:#EAEAEA; background-color:#3C4348;}
-.row4 a:hover{color:inherit;}
-.row4.overlay::after{background-color:rgba(60,67,72,.85);}
-.row5{color:#EAEAEA; background-color:#363D41;}
-.row6, .row6 a{color:#EAEAEA; background-color:#3C4348;}
-
 /* Top Bar
 --------------------------------------------------------------------------------------------------------------- */
 #topbar{padding:5px 0; font-size:12px;}
-
 #topbar i{margin:0 5px 0 0; line-height:normal;}
 
 
@@ -180,76 +158,6 @@ input:focus, textarea:focus, *:required:focus{border-color:#00BCDF;}
   margin:0; padding:0;
 }
 
-/* Media Queries
---------------------------------------------------------------------------------------------------------------- */
-@-ms-viewport{width:device-width;}
-
-
-/* Max Wrapper Width - Laptop, Desktop etc.
---------------------------------------------------------------------------------------------------------------- */
-@media screen and (min-width:978px){
-	.hoc{max-width:978px;}
-}
-
-
-/* Mobile Devices
---------------------------------------------------------------------------------------------------------------- */
-@media screen and (max-width:900px){
-	.hoc{max-width:90%;}
-
-	#topbar{}
-
-	#header{}
-
-	#mainav{padding:20px 0;}
-	#mainav ul{display:none;}
-	#mainav form{display:block;}
-
-	#breadcrumb{}
-
-	.container{}
-	#comments input[type="reset"]{margin-top:10px;}
-	.pagination li{display:inline-block; margin:0 5px 5px 0;}
-
-	#footer{}
-
-	#copyright{}
-	#copyright p:first-of-type{margin-bottom:10px;}
-}
-
-
-@media screen and (max-width:750px){
-	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
-	.fl_left, .fl_right{display:block; float:none;}
-	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
-
-	#topbar{text-align:center;}
-	#topbar *{margin:0;}
-	#topbar ul{margin:0 0 10px 0; line-height:normal;}
-	#topbar ul li{display:inline-block; margin-right:20px;}
-	#topbar ul li:last-child{margin-right:0;}
-
-	#header{text-align:center;}
-	#header #logo{margin:0 0 30px 0;}
-
-	#pageintro{}
-	#pageintro article{float:none; max-width:none; text-align:left;}
-	#pageintro article .heading{font-size:36px;}
-}
-
-
-/* Other
---------------------------------------------------------------------------------------------------------------- */
-@media screen and (max-width:650px){
-	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
-	.scrollable table{margin:0; padding:0; white-space:nowrap;}
-
-	.inline li{display:block; margin-bottom:10px;}
-	.pushright li{margin-right:0;}
-
-	.font-x2{font-size:1.4rem;}
-	.font-x3{font-size:1.6rem;}
-
 /* VideoJS */
 
 #videoPlayer {
@@ -325,9 +233,10 @@ input:focus, textarea:focus, *:required:focus{border-color:#00BCDF;}
     float: left;
     margin-bottom: 20px;
   }
+
   .aio-icon-title {
     font-size: 16px;
-    color: rgb(255, 255, 255);
+    color: black;
     line-height: 1;
     margin-bottom: 8px;
   }
@@ -394,13 +303,6 @@ input[type=submit]:hover {
     clear: both;
 }
 
-/* Отзывчивый макет — когда ширина экрана меньше 600 пикселей, сделайте два столбца друг над другом, а не рядом друг с другом.*/
-@media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-}
 
 /* Подвал */
 
@@ -410,4 +312,80 @@ input[type=submit]:hover {
   width: 100%;
   color: white;
   text-align: center;
+}
+
+  /* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport{width:device-width;}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px){
+	.hoc{max-width:978px;}
+}
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:650px){
+	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
+	.scrollable table{margin:0; padding:0; white-space:nowrap;}
+
+	.inline li{display:block; margin-bottom:10px;}
+	.pushright li{margin-right:0;}
+
+	.font-x2{font-size:1.4rem;}
+	.font-x3{font-size:1.6rem;}
+  
+  /* Отзывчивый макет — когда ширина экрана меньше 600 пикселей, сделайте два столбца друг над другом, а не рядом друг с другом.*/
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+  }
+}
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:900px){
+	.hoc{max-width:90%;}
+
+	#topbar{}
+
+	#header{}
+
+	#mainav{padding:20px 0;}
+	#mainav ul{display:none;}
+	#mainav form{display:block;}
+
+	#breadcrumb{}
+
+	.container{}
+	#comments input[type="reset"]{margin-top:10px;}
+	.pagination li{display:inline-block; margin:0 5px 5px 0;}
+
+	#footer{}
+
+	#copyright{}
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
+
+
+@media screen and (max-width:750px){
+	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+	.fl_left, .fl_right{display:block; float:none;}
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+
+	#topbar{text-align:center;}
+	#topbar *{margin:0;}
+	#topbar ul{margin:0 0 10px 0; line-height:normal;}
+	#topbar ul li{display:inline-block; margin-right:20px;}
+	#topbar ul li:last-child{margin-right:0;}
+
+	#header{text-align:center;}
+	#header #logo{margin:0 0 30px 0;}
+
+	#pageintro{}
+	#pageintro article{float:none; max-width:none; text-align:left;}
+	#pageintro article .heading{font-size:36px;}
 }
