@@ -38,44 +38,43 @@
 
     
 <!-- Модальное окно авторизации -->
-<div id="login" class="login_modal">
-  
-<form class="login_modal-content login_animate" action="/action_page.php">
-    
-    <span onclick="document.getElementById('login').style.display='none'" class="login_close" title="Close Modal">×</span>
-
-    <div class="login_container">
-    <h1>Авторизаваться</h1>
+<div id="login" class="registr_modal">
+<span onclick="document.getElementById('login').style.display='none'" class="registr_close" title="Close Modal">×</span>
+ 
+<form class="registr_modal-content" action="/action_page.php">
+  <div class="registr_container">
+      <h1>Авторизаваться</h1>
       <p>Пожалуйста, заполните эту форму, чтобы войти в учетную запись.</p>
       <hr>
 
-      <label for="uname"><b>Email</b></label>
-      <input type="text" placeholder="Введите Email" name="uname" required>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Введите Email" name="email" required>
 
       <label for="psw"><b>Пароль</b></label>
       <input type="password" placeholder="Введите пароль" name="psw" required>
         
-      <button type="submit">Авторизоваться</button>
+     
       <label>
-        <input type="checkbox" checked="checked" name="remember"> Запомни меня
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
       </label>
+
     </div>
 
-    <div class="login_container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('login').style.display='none'" class="login_cancelbtn">Cancel</button>
-      <span class="login_psw">Забыл <a href="#">пароль?</a></span>
-    </div>
+      <div class="registr_clearfix">
+        <button type="button" onclick="document.getElementById('login').style.display='none'" class="registr_cancelbtn">Отмена</button>
+        <button type="submit" class="registr_signupbtn">Авторизоваться</button>
+      </div>
+
   </form>
 </div>
     
 <!-- Модальное окно регистрации -->
 
 <div id="registr" class="registr_modal">
-
-  <span onclick="document.getElementById('registr').style.display='none'" class="registr_close" title="Close Modal">×</span>
-  <form class="registr_modal-content" action="/action_page.php">
-
-    <div class="registr_container">
+<span onclick="document.getElementById('registr').style.display='none'" class="registr_close" title="Close Modal">×</span>
+  
+<form class="registr_modal-content" action="/action_page.php">
+  <div class="registr_container">
       <h1>Зарегистрироваться</h1>
       <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
       <hr>
@@ -93,12 +92,11 @@
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
       </label>
 
-      <p>Создавая учетную запись, вы соглашаетесь с нашими <a href="#" style="color:dodgerblue">условиями и конфиденциальностью.</a>.</p>
-
       <div class="registr_clearfix">
         <button type="button" onclick="document.getElementById('registr').style.display='none'" class="registr_cancelbtn">Отмена</button>
         <button type="submit" class="registr_signupbtn">Зарегистрироваться</button>
       </div>
+
     </div>
   </form>
 </div>
