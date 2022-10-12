@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="layout\css\framework.css">
     <link rel="stylesheet" href="layout\css\layout.css">
-    <link rel="stylesheet" href="layout\css\modalwindows.css">
+    <link rel="stylesheet" href="layout\css\windows_modal.css">
     <link rel="stylesheet" href="layout\fontawesome-4.5.0.min.css">
-    <link rel="stylesheet" href="layout\css\registr_login.css">
-
+    
     <title>SIN TYAO</title>
 
 </head>
@@ -52,19 +51,19 @@
 
       <label for="psw"><b>Пароль</b></label>
       <input type="password" placeholder="Введите пароль" name="psw" required>
-        
-     
+      
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
       </label>
 
-    </div>
+    
 
       <div class="registr_clearfix">
         <button type="button" onclick="document.getElementById('login').style.display='none'" class="registr_cancelbtn">Отмена</button>
         <button type="submit" class="registr_signupbtn">Авторизоваться</button>
       </div>
 
+      </div>
   </form>
 </div>
     

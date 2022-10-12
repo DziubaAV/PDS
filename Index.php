@@ -17,25 +17,27 @@
       </div>
 
 <!-- Начало модального окна!!! -->
-<form  method="post" action="phone_num.php">
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h1>Оставьте номер телефона и мы Вам перезвоним:</h1>
-    </div>
-    <div class="modal-body">
-      <form action="#">
-        <label for="phone" class='color'><h2>Введите Ваш номер телефона:</h2></label>
-        <input type="tel" id="phone" name="phone_num" placeholder="375 29 1234567" pattern="[0-9]{3} [0-9]{2} [0-9]{7}"><br><br>
-             <div class="row">
-          <input type="submit" value="Отправить">
-        </div>
-      </form>
-    </div>
+<div id="myModal" class="registr_modal">
+<span onclick="document.getElementById('myModal').style.display='none'" class="registr_close" title="Close Modal">×</span>
+
+<form class="registr_modal-content" method="post" action="phone_num.php">
+  <div class="registr_container">
+    <h1>Оставьте номер телефона и мы Вам перезвоним:</h1>
+    <p>Пожалуйста, заполните эту форму, чтобы оставить номер телефона.</p>
+    <hr>
+
+    <label for="phone"><h2>Введите Ваш номер телефона:</h2></label>
+    <input type="tel" id="phone" name="phone_num" placeholder="375 29 1234567" pattern="[0-9]{3} [0-9]{2} [0-9]{7}" required>
+
+      <div class="registr_clearfix">
+        <button type="button" onclick="document.getElementById('myModal').style.display='none'" class="registr_cancelbtn">Отмена</button>
+        <button type="submit" class="registr_signupbtn">ОК</button>
+      </div>
+
   </div>
-</div>
 </form>
+</div>
+
 <script src="layout/js/ModalWindow.js"></script>
 <!-- Конец модального окна!!! -->
 
