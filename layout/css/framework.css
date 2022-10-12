@@ -119,12 +119,7 @@ a {
     outline:none; text-decoration:none;
 }
 
-.imgl {
-    float:left;
-}
-.imgr {
-    float:right;
-}
+
 
 img {
     width:auto; 
