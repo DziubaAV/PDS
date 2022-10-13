@@ -1,3 +1,4 @@
+<?php require_once("Counter\сounter.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,17 +42,17 @@
 <div id="login" class="modal_modal">
 <span onclick="document.getElementById('login').style.display='none'" class="modal_close" title="Close Modal">×</span>
  
-<form class="modal_content" action="/action_page.php">
+<form class="modal_content" method="post" action="security\testreg.php">
   <div class="modal_container">
       <h1>Авторизаваться</h1>
       <p>Пожалуйста, заполните эту форму, чтобы войти в учетную запись.</p>
       <hr>
 
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Введите Email" name="email" required>
+      <label><b>Имя</b></label>
+      <input type="text" placeholder="Введите имя" name="login" required>
 
-      <label for="psw"><b>Пароль</b></label>
-      <input type="password" placeholder="Введите пароль" name="psw" required>
+      <label><b>Пароль</b></label>
+      <input type="password" placeholder="Введите пароль" name="password" required>
       
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
@@ -71,21 +72,21 @@
 <div id="registr" class="modal_modal">
 <span onclick="document.getElementById('registr').style.display='none'" class="modal_close" title="Close Modal">×</span>
   
-<form class="modal_content" action="/action_page.php">
+<form class="modal_content" method="post" action="security\save_user.php">
   <div class="modal_container">
       <h1>Зарегистрироваться</h1>
       <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
       <hr>
 
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Введите Email" name="email" required>
+      <label><b>Имя</b></label>
+      <input type="text" placeholder="Введите имя" name="login" required>
 
-      <label for="psw"><b>Пароль</b></label>
-      <input type="password" placeholder="Введите пароль" name="psw" required>
+      <label><b>Пароль</b></label>
+      <input type="password" placeholder="Введите пароль" name="password" required>
 
-      <label for="psw-repeat"><b>Повторить пароль</b></label>
-      <input type="password" placeholder="Повторить пароль" name="psw-repeat" required>
-      
+      <!-- <label><b>Повторить пароль</b></label>
+      <input type="password" placeholder="Повторить пароль" name="password" required>
+       -->
       <div class="modal_clearfix">
         <button type="button" onclick="document.getElementById('registr').style.display='none'" class="modal_cancelbtn">Отмена</button>
         <button type="submit" class="modal_signupbtn">Зарегистрироваться</button>
@@ -94,7 +95,6 @@
     </div>
   </form>
 </div>
-
 
 <!-- ______________________________________________________________________________________ -->
            <div class="wrapper row1">
