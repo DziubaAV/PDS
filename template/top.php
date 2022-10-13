@@ -151,9 +151,38 @@
                 <li><a href="#">Дополнительные услуги</a></li>
               </ul> -->
             <li><a href="/contact.php">Контакты</a></li>
-            <li><a href="/answer.php">Вопрос/ответ</a></li>
+            <li><a onclick="document.getElementById('subject').style.display='block'" style="width:auto;" href="#">Вопрос/ответ</a></li>
             <!-- <li><a href="admin\index.php">Статистика</a></li>
             <li><a href="#">Текст 4</a></li> -->
           </ul>
         </nav>
       </div>
+
+
+      <!-- Вопрос/ответ -->
+
+      <div id="subject" class="modal_modal">
+  <span onclick="document.getElementById('subject').style.display='none'" class="modal_close" title="Close Modal">×</span>
+  <form class="modal_content" method="post" action="qustion.php">
+    <div class="modal_container">
+      <h2>Задайте нам вопрос и мы обязательно на него ответим!</h2>
+      <p>Пожалуйста, заполните эту форму, чтобы задать нам вопрос.</p>
+      <hr>
+
+      <label for="fname">Имя</label>
+      <input type="text" name="name" placeholder="Введите имя">
+              
+      <label for="email">Email</label>
+      <input type="text" name="email" placeholder="Введите Email" required>
+    
+      <label for="qustion"><h2>Введите Ваш вопрос:</h2></label>
+      <textarea name="qustion" placeholder="Введите вопрос" style="height:200px"></textarea>
+      
+      <div class="modal_clearfix">
+        <button type="button" onclick="document.getElementById('subject').style.display='none'" class="modal_cancelbtn">Отмена</button>
+        <button type="submit" class="modal_signupbtn">Отправить</button>
+      </div>
+
+    </div>
+  </form>
+</div>
