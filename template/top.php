@@ -169,13 +169,13 @@
       <p>Пожалуйста, заполните эту форму, чтобы задать нам вопрос.</p>
       <hr>
 
-      <label for="fname">Имя</label>
-      <input type="text" name="name" placeholder="Введите имя">
+      <label>Имя</label>
+      <input type="text" name="name" placeholder="Введите имя" required>
               
-      <label for="email">Email</label>
+      <label">Email</label>
       <input type="text" name="email" placeholder="Введите Email" required>
     
-      <label for="qustion"><h2>Введите Ваш вопрос:</h2></label>
+      <label><h2>Введите Ваш вопрос:</h2></label>
       <textarea name="qustion" placeholder="Введите вопрос" style="height:200px"></textarea>
       
       <div class="modal_clearfix">
