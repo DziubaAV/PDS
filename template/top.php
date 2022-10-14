@@ -72,21 +72,24 @@
 <div id="registr" class="modal_modal">
 <span onclick="document.getElementById('registr').style.display='none'" class="modal_close" title="Close Modal">×</span>
   
-<form class="modal_content" method="post" action="#">
+<form class="modal_content" method="post" action="register\signup.php">
   <div class="modal_container">
       <h1>Зарегистрироваться</h1>
       <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
       <hr>
 
       <label><b>Имя</b></label>
-      <input type="text" placeholder="Введите имя" name="login" required>
+      <input type="text" placeholder="Введите имя" name="full_name" required>
+
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Введите Email" name="email" required>
 
       <label><b>Пароль</b></label>
       <input type="password" placeholder="Введите пароль" name="password" required>
 
-      <!-- <label><b>Повторить пароль</b></label>
-      <input type="password" placeholder="Повторить пароль" name="password" required>
-       -->
+      <label><b>Повторить пароль</b></label>
+      <input type="password" placeholder="Повторить пароль" name="password_repeat" required>
+      
       <div class="modal_clearfix">
         <button type="button" onclick="document.getElementById('registr').style.display='none'" class="modal_cancelbtn">Отмена</button>
         <button type="submit" class="modal_signupbtn">Зарегистрироваться</button>
