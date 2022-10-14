@@ -42,7 +42,7 @@
 <div id="login" class="modal_modal">
 <span onclick="document.getElementById('login').style.display='none'" class="modal_close" title="Close Modal">×</span>
  
-<form class="modal_content" method="post" action="security\testreg.php">
+<form class="modal_content" method="post" action="#">
   <div class="modal_container">
       <h1>Авторизаваться</h1>
       <p>Пожалуйста, заполните эту форму, чтобы войти в учетную запись.</p>
@@ -72,7 +72,7 @@
 <div id="registr" class="modal_modal">
 <span onclick="document.getElementById('registr').style.display='none'" class="modal_close" title="Close Modal">×</span>
   
-<form class="modal_content" method="post" action="security\save_user.php">
+<form class="modal_content" method="post" action="#">
   <div class="modal_container">
       <h1>Зарегистрироваться</h1>
       <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
