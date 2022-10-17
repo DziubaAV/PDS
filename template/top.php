@@ -31,7 +31,7 @@
             <li><i class="fa fa-user"></i>    <a onclick="document.getElementById('registr').style.display='block'" style="width:auto;" href="#">Регистрация</a></li>
           </ul>
         </div>
-
+    
       </div>
     </div>
 
@@ -42,14 +42,14 @@
 <div id="login" class="modal_modal">
 <span onclick="document.getElementById('login').style.display='none'" class="modal_close" title="Close Modal">×</span>
  
-<form class="modal_content" method="post" action="#">
+<form class="modal_content" method="post" action="registr\testreg.php">
   <div class="modal_container">
       <h1>Авторизаваться</h1>
       <p>Пожалуйста, заполните эту форму, чтобы войти в учетную запись.</p>
       <hr>
 
-      <label><b>Имя</b></label>
-      <input type="text" placeholder="Введите имя" name="login" required>
+      <label><b>Логин</b></label>
+      <input type="text" placeholder="Введите логин" name="login" required>
 
       <label><b>Пароль</b></label>
       <input type="password" placeholder="Введите пароль" name="password" required>
@@ -72,25 +72,26 @@
 <div id="registr" class="modal_modal">
 <span onclick="document.getElementById('registr').style.display='none'" class="modal_close" title="Close Modal">×</span>
   
-<form class="modal_content" method="post" action="registr\registr.php">
+<form class="modal_content" method="post" action="registr\save_user.php">
   <div class="modal_container">
       <h1>Зарегистрироваться</h1>
       <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
       <hr>
 
-      <label><b>Имя</b></label>
-      <input type="text" placeholder="Введите имя" name="login" required>
-
+      <label><b>Логин</b></label>
+      <input type="text" placeholder="Введите логин" name="login" required>
+ 
       <label><b>Пароль</b></label>
       <input type="password" placeholder="Введите пароль" name="password" required>
 
-      <label><b>Повторить пароль</b></label>
-      <input type="password" placeholder="Повторить пароль" name="password_repeat" required>
+      <!-- <label><b>Повторить пароль</b></label>
+      <input type="password" placeholder="Повторить пароль" name="password_confirm" required> -->
       
       <div class="modal_clearfix">
         <button type="button" onclick="document.getElementById('registr').style.display='none'" class="modal_cancelbtn">Отмена</button>
         <button type="submit" class="modal_signupbtn">Зарегистрироваться</button>
-      </div>
+
+       </div>
 
     </div>
   </form>
